@@ -5,8 +5,8 @@ title: PHPUnit Best Pratice
 abstract: Talk of Sebastian Bergmann about PHPUnit Best Practices
 author_twitter: Fabian_ikono
 author: Fabian Blechschmidt
-categories:
-- articles
+categories: [articles]
+tags: [IPC12]
 ---
 
 # PHPUnit Best Pratice

@@ -5,8 +5,8 @@ title: Designing beautiful APIs
 abstract: Talk by Tobias Schlitt on the IPC12
 author_twitter: Fabian_ikono
 author: Fabian Blechschmidt
-categories:
-- articles
+categories: [articles]
+tags: [IPC12]
 ---
 
 #Desingnig Beautiful APIs
