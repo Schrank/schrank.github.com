@@ -1,81 +1,175 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='UTF-8'/>
-  <title>Poole &middot; Serving Jekyll faithfully</title>
-  <link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon' />
-  <link rel='stylesheet' href='/fonts/open-sans.css'>
-  <link rel='stylesheet' href='/app.css'>
+    <meta charset='UTF-8'/>
+    <title>Blog &middot; Magento, Security, Testing - Fabian Blechschmidt</title>
+    <link rel='shortcut icon' href='/blog/images/favicon.ico' type='image/x-icon'/>
+    <link rel='stylesheet' href='/blog/fonts/open-sans.css'>
+    <link rel='stylesheet' href='/blog/app.css'>
 </head>
 <body>
-  <div id='container'>
-    <div id='main'><div class="help">
-  <h1>Help</h1>
+<div id='container'>
 
-  <div class='articles'>
-    
-      <a class="article" href="/articles/getting-started.html">
-        
-          <img src="http://farm7.staticflickr.com/6119/6884293596_b44a31bf0a_m.jpg" width="200" height="100"/>
-        
+    <div id="header">
+        <div class="navigation">
+            <a href="/blog" class="title">Home</a>
+        </div>
+    </div>
 
-        <div class="title">
-          Getting Started
-        </div>
-        <div class="descr">
-          A brief introduction on how to use Poole, what it can do for you and what not.
-        </div>
-      </a>
-    
-      <a class="article" href="/articles/liquid.html">
-        
-          <img src="http://farm7.staticflickr.com/6119/6884293596_b44a31bf0a_m.jpg" width="200" height="100"/>
-        
-
-        <div class="title">
-          Using Liquid
-        </div>
-        <div class="descr">
-          The quick guide
-        </div>
-      </a>
-    
-      <a class="article" href="/articles/jekyll.html">
-        
-          <img src="http://farm7.staticflickr.com/6119/6884293596_b44a31bf0a_m.jpg" width="200" height="100"/>
-        
-
-        <div class="title">
-          Things you should know about Jekyll
-        </div>
-        <div class="descr">
-          A collection of not so obvious Jekyll facts
-        </div>
-      </a>
-    
-      <a class="article" href="/articles/install.html">
-        
-          <img src="http://farm7.staticflickr.com/6119/6884293596_b44a31bf0a_m.jpg" width="200" height="100"/>
-        
-
-        <div class="title">
-          Installation Instructions
-        </div>
-        <div class="descr">
-          You want to run your own instance of Poole? Here's what you need to know.
-        </div>
-      </a>
-    
-  </div>
+    <div id='main'><div class="article-navigation">
+  
+    <a class="article-link" href="/blog/articles/PHPUnit-Best-Practice.html" title="PHPUnit Best Pratice">
+      
+    </a>
+  
+    <a class="article-link" href="/blog/articles/Designing-beautiful-APIs.html" title="Designing beautiful APIs">
+      
+    </a>
+  
 </div>
 
-</div>
+
+  <div class="intro">
+    <div class="title">PHPUnit Best Pratice</div>
+    <div class="abstract">Talk of Sebastian Bergmann about PHPUnit Best Practices</div>
+    <div class="meta"> Posted by <a href="http://twitter.com/Fabian_ikono">Fabian Blechschmidt</a> on October 15, 2012 </div>
   </div>
 
-  <div id='footer'>
-    <div class="footer-content">
-      Made by <a href="http://developmentseed.org">Development Seed</a>, Sourcecode on <a href="http://github.com/poole/bootstrap">GitHub</a>
+  <div class="article-wrapper">
+    <div class="help post-content">
+      <h1 id='phpunit_best_pratice'>PHPUnit Best Pratice</h1>
+
+<p>Sebastian Bergmann is talking about PHPUnit Best Pratices</p>
+
+<blockquote>
+<p>Nobody likes to install a software.</p>
+</blockquote>
+
+<p>Install PHPUnit via PEAR or composer.</p>
+
+<h2 id='be_descriptive_about_what_you_are_testing'>Be descriptive about what you are testing</h2>
+
+<p>If you write tests for a class named <code>Money</code>, name the Test <code>MoneyTest</code>, give your test methods descriptive names.</p>
+
+<blockquote>
+<p>It (the descriptive name of the method) forces you to think about what the test code is supposed to do</p>
+</blockquote>
+
+<h2 id='be_expressive_what_you_are_testing'>Be expressive what you are testing</h2>
+
+<p>In PHPUnit 3.7 there is a new @cover Annotation to only mark code inthis method in the code coverage report</p>
+
+<pre><code>/**
+  * @cover Money::negate
+  */</code></pre>
+
+<p>This avoids false positives in the code coverage report, if the method only is a sidenote of a test.</p>
+
+<h2 id='create_good_error_messages'>Create good error messages</h2>
+
+<pre><code>$this-&gt;assertEmpty(array()); # Error: asserted empty, got not empty
+# vs.
+$this-&gt;assertTrue(empty()) # Error: asserted true, got false &lt;- bad.</code></pre>
+
+<h2 id='use_assertions'>Use assertions</h2>
+
+<p>Obviously&#8230; Use them.</p>
+
+<h2 id='strict_mode'>Strict mode</h2>
+
+<p>The strict mode counts the assertions in a test. If there is no assertion, the test is marked as incomplete and there is no code coverage.</p>
+
+<pre><code>phpunit --strict --verbose MoneyTest</code></pre>
+
+<p><strong>Use it!</strong></p>
+
+<h2 id='write_real_unit_tests'>Write real unit tests</h2>
+
+<p>Remove all dependencies, use mock objects or stubs.</p>
+
+<pre><code>$stub = $this-&gt;getMock(&#39;MoneyInterface&#39;);
+
+$stub-&gt;expects($this-&gt;any())
+	 -&gt;method(&#39;getAmount&#39;)
+     -&gt;will($this-&gt;returnValue(1));</code></pre>
+
+<h2 id='decouple_test_code_and_data'>Decouple test code and data</h2>
+
+<p>Data providers solve the problem to duplicate the test code for different parameters.</p>
+
+<pre><code>/**
+ * @dataProvider provider
+ */   
+public function testAdd($a, $b, $c) {
+	$this-&gt;assertEquals($c, $a + $b);
+}
+
+public function provider() {
+	return array(
+    	&#39;correct1&#39; =&gt; array(1,2,3), 	# you can set names for the groups to pop up in error message
+        &#39;correct2&#39; =&gt; array(5,6,11)
+    );
+}</code></pre>
+
+<h2 id='use_a_configuration_file'>Use a configuration file</h2>
+
+<h3 id='bootstrap_file_configuration_settings'>Bootstrap file, configuration settings</h3>
+
+<p>Bootstrap runs a bootstrap file before the tests are run.</p>
+
+<ul>
+<li>backupGlobals (backup global variables before tests and restore afterwards)</li>
+
+<li>backupStaticAttributes (same as above, but with static attributes)</li>
+
+<li>strict mode (see above)</li>
+
+<li>cacheTokens (static code analysis checks for die(), echo(), etc. and caches these tokens)</li>
+</ul>
+
+<h3 id='it_is_possible_to_order_the_unit_tests'>It is possible to order the unit tests</h3>
+
+<ol>
+<li>(real) unit tests, run fast, are very valuable, because it shows directly the unit of code which fails</li>
+
+<li>integration tests</li>
+
+<li>edge-to-edge tests</li>
+
+<li>end-to-end test</li>
+</ol>
+
+<blockquote>
+<p>The larger the test is, the less valuable the output is</p>
+</blockquote>
+
+<h3 id='define_the_type_of_logging'>Define the type of logging</h3>
+
+<p>junit, coverage-clover, coverage-html and the targets of the export files</p>
+
+<h3 id='filters'>Filters</h3>
+
+<p>Define filters, in which files should be looked for tests</p>
+
+<blockquote>
+<p>Use the most specific assertion!</p>
+</blockquote>
+
+<blockquote>
+<p>Write real unit tests</p>
+</blockquote>
     </div>
   </div>
+
+
+</div>
+</div>
+
+<div id='footer'>
+    <div class="footer-content">
+        Made by <a href="http://developmentseed.org">Development Seed</a>, Source Code on <a
+            href="http://github.com/prose/bootstrap">GitHub</a>
+    </div>
+</div>
 </body>
 </html>
