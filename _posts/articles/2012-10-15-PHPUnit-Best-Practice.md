@@ -6,7 +6,7 @@ abstract: Talk of Sebastian Bergmann about PHPUnit Best Practices
 author_twitter: Fabian_ikono
 author: Fabian Blechschmidt
 categories:
-- IPC12
+- articles
 ---
 
 # PHPUnit Best Pratice
@@ -108,8 +108,3 @@ Define filters, in which files should be looked for tests
 > Use the most specific assertion!
 
 > Write real unit tests
-
-
-
-
-
