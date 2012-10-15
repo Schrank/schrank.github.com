@@ -7,6 +7,7 @@ author_twitter: Fabian_ikono
 author: Fabian Blechschmidt
 categories:
 - articles
+- IPC12
 ---
 
 # PHPUnit Best Pratice
