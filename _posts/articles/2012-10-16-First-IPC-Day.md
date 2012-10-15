@@ -16,9 +16,9 @@ categories:
 There are a lot of interessting talks. I heard:
 
 * Domain Specific Languages (Tobias Schlitt, Gordon Oheim)
-* Living with Legacy (Sebastian Bergmann)
+* Living with Legacy (Sebastian Bergmann, [Slides](http://thephp.cc/dates/2012/international-php-conference/phpunit-best-practices))
 * Rethinking the Artichtecture of a modern CMS (Lukas Smith, Henri Bergius)
-* PHPUnit Best Pratice (Sebastian Bergmann)
+* PHPUnit Best Pratice (Sebastian Bergmann, [Slides](http://thephp.cc/dates/2012/international-php-conference/phpunit-best-practices))
 * Designing Beautiful APIs (Tobias Schlitt)
 
 ## Domain Specific Languages (DSL)
