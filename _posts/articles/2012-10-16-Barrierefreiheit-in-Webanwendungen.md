@@ -29,12 +29,12 @@ tags:
 * Behindertengleichstellungsgesetz BGG -> §11
 * Barrierefreie Informationstechnik-Verordnung (BITV)
 * Web Accessibility Initiative (WAI)
- * Alternative zu Videos und Audioinhalte
- * Struktus/Semantik nicht nur durch Farben darstellen
- * W3C Richtlinen einhalten
- * Klare Navigationsmechanismen
- * Einfach gehaltene Inhalts- und Satzstrukturen
- * Geräteunabhängiges Design
+  * Alternative zu Videos und Audioinhalte
+  * Struktus/Semantik nicht nur durch Farben darstellen
+  * W3C Richtlinen einhalten
+  * Klare Navigationsmechanismen
+  * Einfach gehaltene Inhalts- und Satzstrukturen
+  * Geräteunabhängiges Design
 
 ## Wer braucht's?
 * Nutzer mit leerem Mausakku
@@ -58,25 +58,25 @@ tags:
 * Suchfeld als erstes im Quelltext anlegen
 * Verstecktes Menü
 * Sprunglinks
- * &lt;a href&gt;, &lt;a id&gt;
- * nicht zuviele davon
- * hervorheben bei hover, focus, active
+  * &lt;a href&gt;, &lt;a id&gt;
+  * nicht zuviele davon
+  * hervorheben bei hover, focus, active
 * Formatierungen und Darstellungen
- * sonnvolle Formatierungen
- * Unterstreichungen **nur** bei Links
- * Fettdruck in Maßen
- * nichr kursiv verwenden
- * sinnvolle alt-Attribute in Bildern &lt;img alt="Hier eine Beschreibung"&gt;
+  * sonnvolle Formatierungen
+  * Unterstreichungen **nur** bei Links
+  * Fettdruck in Maßen
+  * nichr kursiv verwenden
+  * sinnvolle alt-Attribute in Bildern &lt;img alt="Hier eine Beschreibung"&gt;
 * Formulare
- * Pflichtfeldhinweis in &lt;label&gt; (Nicht nur ein Sternchen - für Blinde)
- * Captcha Frage innerhalb des Labels positionieren
- * Fehlermeldung vor Eingabefeldern ausgeben (im HTML!, nicht zwangsweise auch so sichtbar)
- * Seitentitel bei Fehlerausgabe abändern
- * aktives Feld hervorheben
+  * Pflichtfeldhinweis in &lt;label&gt; (Nicht nur ein Sternchen - für Blinde)
+  * Captcha Frage innerhalb des Labels positionieren
+  * Fehlermeldung vor Eingabefeldern ausgeben (im HTML!, nicht zwangsweise auch so sichtbar)
+  * Seitentitel bei Fehlerausgabe abändern
+  * aktives Feld hervorheben
 * Navigation
- * aktiver Navigationspunkt mit &lt;strong&gt; einfaßen
- * Links "flächig" (display: block;) definieren, damit Benutzer mehr als den Text zum klicken haben
- * verstecktes Menü mit Sprunglinks
+  * aktiver Navigationspunkt mit &lt;strong&gt; einfaßen
+  * Links "flächig" (display: block;) definieren, damit Benutzer mehr als den Text zum klicken haben
+  * verstecktes Menü mit Sprunglinks
  
 ## Didaktik
 * Fachbegriffe, Abkürzungen, Fremdwörter vermeiden
