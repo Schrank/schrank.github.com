@@ -1,7 +1,7 @@
 ---
 published: true
 layout: article
-title: Mythen und Fakten über Behaviour Driven Development
+title: Mythen und Fakten über BDD
 abstract: Einführung in BDD, Behat und Mink von Sebastian Bauer und Dominik Jungowski
 author_twitter: Fabian_ikono
 author: Fabian Blechschmidt
