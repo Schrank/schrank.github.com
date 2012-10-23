@@ -44,10 +44,24 @@ If you want changes in the layout, there are two main ways to achieve this:
 
 ## Removing the coupon box from the cart
     <default>
-        ~~<reference name="checkout.cart">~~
-            <remove name="checkout.cart.coupon" />
-        ~~</reference>~~
+		<remove name="checkout.cart.coupon" />
     </default>
-    
-    
+
 Update: Vinai Kopp just mailed me, that `<remove />` doesn't use the parent block context, so you should use it directly in the handle.
+
+Markdown doesn't support strike through, so to compare, the old code:
+    <default>
+        <reference name="checkout.cart">
+            <remove name="checkout.cart.coupon" />
+        </reference>
+    </default>   
+
+##Update: Alternative with unsetChild
+
+As far as I know `<remove>` is the lastto be called. For this reason, it is not possible to have a block with the same name at another location. So you can use unsetChild instead (which works in the parent block context! ;-)). But be careful with the handles, because in `<default>` the coupon-block doesn't exist yet.
+	
+    <checkout_cart_index>
+        <reference name="checkout.cart">
+            <action method="unsetChild"><name>coupon</name></action>
+        </reference>
+    </checkout_cart_index>
