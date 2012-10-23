@@ -2,7 +2,7 @@ auto: true
 server: true
 permalink: none
 baseurl: ""
-name: Blog &middot; Magento, Security, Testing - Fabian Blechschmidt
+name: Blog - Magento, Security, Testing - Fabian Blechschmidt
 description: Notepad and information pool about Magento, Security, Testing
 url: http://blog.fabian-blechschmidt.de
 exclude:
