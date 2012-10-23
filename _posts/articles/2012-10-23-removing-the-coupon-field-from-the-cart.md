@@ -44,7 +44,10 @@ If you want changes in the layout, there are two main ways to achieve this:
 
 ## Removing the coupon box from the cart
     <default>
-        <reference name="checkout.cart">
+        ~~<reference name="checkout.cart">~~
             <remove name="checkout.cart.coupon" />
-        </reference>
+        ~~</reference>~~
     </default>
+    
+    
+Update: Vinai Kopp just mailed me, that `<remove />` doesn't use the parent block context, so you should use it directly in the handle.
