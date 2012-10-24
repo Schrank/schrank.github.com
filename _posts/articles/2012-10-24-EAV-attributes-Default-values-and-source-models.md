@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: article
 title: EAV attributes, default values and source models
 abstract: To have a select box for an EAV attribute with default value you need a source model - I think.
