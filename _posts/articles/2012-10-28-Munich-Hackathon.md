@@ -1,8 +1,8 @@
 ---
 published: true
 layout: article
-title: Magento Hackathon in Munich (26. - 28. October 2012)
-abstract: Meeting great hackers, developers and friends. With the same spirit, we discuss problems, find solutions and implements them.
+title: Magento Hackathon in Munich
+abstract: 26. - 28. October 2012, Meeting great hackers, developers and friends. With the same spirit, we discuss problems, find solutions and implements them.
 author_twitter: Fabian_ikono
 author: Fabian Blechschmidt
 categories:
