@@ -39,7 +39,7 @@ Tim talked saturday morning about upgrading magento. He had a lot of projects th
 If you have any tipps, share them with us, [make a pull request](https://github.com/magento-hackathon/upgrade-checklist)!
 
 ### Fabian Blechschmidt
-I had the second talk. It was - as many of my talks the last time - about security. To be more specific: ["OWASP Top 10 - im Kontext von Magento" (OWASP Top 10 in context with magento)](http://www.ikonoshirt.de/stuff/12-10-27%20OWASP%20und%20Magento.pdf).
+I had the second talk. It was - like many of my talks the last time - about security. To be more specific: ["OWASP Top 10 - im Kontext von Magento" (OWASP Top 10 in context with magento)](http://www.ikonoshirt.de/stuff/12-10-27%20OWASP%20und%20Magento.pdf).
 ![Fabian Blechschmidt, talking about security](https://pbs.twimg.com/media/A6SM3dGCYAEL4UD.jpg)
 
 ## Projects
