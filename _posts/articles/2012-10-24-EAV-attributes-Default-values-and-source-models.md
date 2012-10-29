@@ -1,7 +1,7 @@
 ---
-published: false
+published: true
 layout: article
-title: EAV attributes, default values and source models
+title: EAV attributes and default values
 abstract: To have a select box for an EAV attribute with default value you need a source model - I think.
 author_twitter: Fabian_ikono
 author: Fabian Blechschmidt
@@ -9,7 +9,8 @@ categories:
 - articles
 ---
 
-# EAV Attribute
+# EAV attributes, default values and source models
+## EAV Attribute
 
 I tried to [add an EAV attribut](http://www.magentocommerce.com/knowledge-base/entry/magento-for-dev-part-7-advanced-orm-entity-attribute-value), set a default value and that without using a source model, set this options:
     
@@ -20,10 +21,10 @@ I tried to [add an EAV attribut](http://www.magentocommerce.com/knowledge-base/e
 		[...]
     );
 
-# Default value
+## Default value
 Magento adds the values into the `eav_attribute_option_value` table and shows them in the backend. The problem is, if we save them as int, we can't set 'Customer' as default. And we can't set the `eav_attribute_option_value.value_id`, because we don't know it.
 
-# Solution
+## Solution
 I removed the options from the attribute and added a soure model.
 
     $this->addAttribute('customer', 'customer_type', array(
