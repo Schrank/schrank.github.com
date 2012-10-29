@@ -14,8 +14,8 @@ Thanks to all the sponsors, we had a great weekend in Munich.
 
 ##Sponsors
 
-###[Jarlssens](http://www.jarlssen.de/)
-In [Jarlssens](http://www.jarlssen.de/) office, we had a lot of space to develope and extend together extension.
+###[Jarlssen](http://www.jarlssen.de/)
+In [Jarlssen's](http://www.jarlssen.de/) office, we had a lot of space to develope and extend together extension.
 
 ###[Anolo](http://www.anolo.de/magento-hackathon.html)
 The energy was sponsored by [Anolo](http://www.anolo.de/magento-hackathon.html). They brought a lot of snickers, mars, milka tender, chips and other sweet and salty things with them.
@@ -23,7 +23,7 @@ The energy was sponsored by [Anolo](http://www.anolo.de/magento-hackathon.html).
 ###Karl Spies
 Beside a lot of water and limonade from Jarlssen, Karl Spies brought, as last time, Club Mate with him, as far as I know, we didn't empty all of it.
 
-###[Shirtinator](www.shirtinator.de/)
+###[Shirtinator](http://www.shirtinator.de/)
 Thanks to shirtinator, we had, like last time, wonderful shirts for everyone:
 ![First status meeting in hackathon shirts](https://pbs.twimg.com/media/A6OXq_hCQAEbkE7.jpg)
 
@@ -90,4 +90,3 @@ I have absolutely no idea what this is, I really need to have a look on vagrant!
 > informations and registration for mage-hackathons
 
 Our page got an update on Symfony 2.1 and we changed from RuianBootstrapBundle to MopaBootstrapBundle. More to come!
-
