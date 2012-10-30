@@ -1,8 +1,8 @@
 ---
 published: true
 layout: article
-title: Adminnotification or Magento is phoning home
-abstract: How this feature works and what we should do with it
+title: Adminnotification or 
+abstract: Magento is phoning home. How this feature works and what we should do with it
 author_twitter: Fabian_ikono
 author: Fabian Blechschmidt
 categories:
