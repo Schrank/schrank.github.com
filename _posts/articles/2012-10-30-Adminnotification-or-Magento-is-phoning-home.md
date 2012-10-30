@@ -29,7 +29,8 @@ It checks wether an admin is logged in and checks for updates
     
 
 In `checkUpdate()` it is checked, wether the last request for updates was more than an hour ago, if yes, the data are requested from the [Magento Notifications RSS Feed](http://notifications.magentocommerce.com/community/notifications.rss) and written to the database.
-
+	
+    // app/code/core/Mage/AdminNotification/Model/Feed.php:75
 	if (($this->getFrequency() + $this->getLastUpdate()) > time()) {
         return $this;
     }
