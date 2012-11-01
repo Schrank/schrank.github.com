@@ -36,6 +36,8 @@ We had two talks this weekend.
 ### Tim 
 Tim talked saturday morning about upgrading magento. He had a lot of projects the last weeks, magento 1.3, 1.4, 1.5 etc. All upgraded to the latest version (1.7.0.2). He talked about creating fast quotes for customers and what the problems are and might be.
 
+You can find [Tim's slides](http://www.openstream.ch/wp-content/uploads/2012/11/Estimating-Magento-Upgrades.pdf) on the [openstream.ch site](http://www.openstream.ch/)
+
 If you have any tipps, share them with us, [make a pull request](https://github.com/magento-hackathon/upgrade-checklist)!
 
 ### Fabian Blechschmidt
