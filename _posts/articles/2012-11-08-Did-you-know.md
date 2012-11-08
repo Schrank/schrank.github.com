@@ -1,7 +1,7 @@
 ---
 published: true
 layout: article
-title: Did you know the parameters of Varien_Data_Form?
+title: Parameters of Varien_Data_Form?
 abstract: You can change a lot with these parameters
 author_twitter: Fabian_ikono
 author: Fabian Blechschmidt
