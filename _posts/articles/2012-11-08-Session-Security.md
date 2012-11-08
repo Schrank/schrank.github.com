@@ -15,3 +15,5 @@ The user is identified with his session id. The session id is usually saved in a
 
 # Why is it important to secure the session?
 
+Downloadable products? Customer Credit & Reward Points? (@VinaiKopp)
+Change shipping address to receive packages :) (@pavelnovitsky)
