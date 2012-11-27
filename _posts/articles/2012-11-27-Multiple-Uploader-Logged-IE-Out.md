@@ -21,4 +21,6 @@ This setting is in the standard `.htaccess` with this comment:
 
 	# disable user agent verification to not break multiple image upload
     
-I have really NO idea, why everything works, when I turn on this option, but afterwards I wasn't longer logged out after uploading an image.
+I have really NO idea, why everything works, when I turn on this option, but afterwards I wasn't longer logged out after uploading an image. So just change the setting to:
+
+	suhosin.session.cryptua = on 
