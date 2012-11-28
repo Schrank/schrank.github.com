@@ -36,7 +36,7 @@ I updated the attribute, the result was:
 
 That is wrong.
 
-## Just remove the wring values
+## Just remove the wrong values
 
 I didn't find a way to remove the values from an attribute. If you have one, tell me!
 
@@ -48,4 +48,4 @@ The easiest and nicest way I found was:
     // [...]
     $installer->addAttribute(Mage_Catalog_Model_Product::ENTITY, 'color', $data);
     
-Remove the attribute and create it with the new values.    
+Remove the attribute and create it with the new values.
