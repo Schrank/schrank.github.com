@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: article
 title: Array Union Operator
 abstract: Use the Union Operator to fix a magento bug
@@ -80,5 +80,3 @@ Use the array union operator to merge the arrays, but be careful with the order 
             196=>'Ae', 228=>'ae', 214=>'Oe', 246=>'oe', 220=>'Ue', 252=>'ue'
         ) + $subst;
     }
-    
-    
