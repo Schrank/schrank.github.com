@@ -53,7 +53,7 @@ The usage is simple:
 	$array1 = array('10' => 'test', '12' => 'foo');
     $array2 = array('12' => 'bar', '13' => 'magento');
     var_dump($array1 + $array2);
-	var_dump($array1, $array2);
+	var_dump(array_merge($array1, $array2)); // UPDATE array_merge() was missing
 	// Result:
 	array (size=3)
 		10 => string 'test' (length=4)
