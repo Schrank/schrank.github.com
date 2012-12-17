@@ -22,7 +22,7 @@ Thanks to [Steven Henk Don](http://www.shdon.com/blog/2011/06/24/magento-show-ad
 
 # Longer story
 
-I talked a few days ago with [Sascha from melovely.de](http://www.melovely.de) about old, not more functional or "wrong" answers to "standard" magento questions. I had to add address fields to the customer registration and thought about a observer to do it, but there is an easy way.
+I talked a few days ago with [Sascha from melovely.de](http://www.melovely.de) about old, not more functional or "wrong" answers to "standard" magento questions. I had to add address fields to the customer registration and thought about a observer to do it, but there is an easier way. This is my contribution to replace the google finds with better answers to always the same questions.
 
 ## Dig in to the controller
 
