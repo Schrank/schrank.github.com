@@ -44,7 +44,7 @@ Ok, I built a long query to change this, I tried it in a big transaction but it 
 
     Cannot add or update a child row: a foreign key constraint fails
     
-if you can tell my why, please send me an email!
+if you can tell me why, please send me an email!
 
 So I skipped the foreign key check:
 
