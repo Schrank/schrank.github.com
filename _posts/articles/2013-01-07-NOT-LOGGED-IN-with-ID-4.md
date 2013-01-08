@@ -105,3 +105,5 @@ The index is created with a big SQL statement (I think, didn't check this) and t
 [Damian tweeted](https://twitter.com/daim2k5/status/288621865944092672) that you have to place a 
 
     SET sql_mode='NO_AUTO_VALUE_ON_ZERO';
+    
+at the beginning of your SQL dump. If you don't do this, your admin store, the customer_group, etc. geting new IDs.
