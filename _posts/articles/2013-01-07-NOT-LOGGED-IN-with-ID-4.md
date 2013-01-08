@@ -100,3 +100,8 @@ I have no idea. `Mage_Customer` has three install scripts, all of them create th
 
 # Conclusion
 The index is created with a big SQL statement (I think, didn't check this) and therefore uses the `customer_group_id` from the database and magento's product list uses the constat from `Mage_Customer_Model_Group` if they don't match, you have a problem.
+
+# UPDATE
+[Damian tweeted](https://twitter.com/daim2k5/status/288621865944092672) that you have to place a 
+
+    SET sql_mode='NO_AUTO_VALUE_ON_ZERO';
