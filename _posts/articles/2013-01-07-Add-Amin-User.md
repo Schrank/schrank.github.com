@@ -27,7 +27,7 @@ Cheat sheet for me:
     @lastname lastname,
     @email email,
     @username username,
-    MD5(CONCAT(@salt, @password) password,
+    CONCAT(MD5(CONCAT(@salt, @password)), ':', @salt) password,
     NOW( ) created,
     NULL modified,
     NULL logdate,
@@ -47,4 +47,3 @@ Cheat sheet for me:
     'U' role_type,
     (SELECT user_id FROM admin_user WHERE username = @username) user_id,
     @username role_name
-
