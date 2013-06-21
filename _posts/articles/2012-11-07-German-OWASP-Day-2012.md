@@ -9,12 +9,11 @@ categories: [articles]
 tags: [owasp, owasp2012]
 ---
 
-# German OWASP Day
+Ich war gestern auf dem German OWASP Day 2012. Die [OWASP](http://www.owasp.org) ist das ["Open Web Application Security Project"](http://www.owasp.org). Eine offene, kostenlose Organisation, die
 
+# Keynote: Volkmar Lotz (SAP)
 
-## Keynote: Volkmar Lotz (SAP)
-
-### Part 1: Build Knowledge
+## Part 1: Build Knowledge
 
 Auch mit Frameworks kann man Sicherheit nicht ohne den Entwickler garantieren -> Entwickler sind die Basis alles Sicherheit!
 
@@ -41,8 +40,8 @@ Identity and Access management 1 tag
 Bookshop (Lab):
 > Von XSS bis Code Injection funktioniert da alles.
 
-####Lessons learned
-##### "One size fits all" does not work
+###Lessons learned
+#### "One size fits all" does not work
 
 Verschiedene Formen von Training, Übungen, LAbore, Ausprobieren
 
@@ -52,31 +51,31 @@ Trennen zwischen Frameworks, damit der Entwickler weiß, was er in der tägliche
 
 Deal with contradicting feedback (nicht gleich beim ersten schlechten feedback inhalte oder art des trainings ändern)
 
-##### Trainer role is critical
+#### Trainer role is critical
 
 > Training steht und fällt mit dem engagement des TRainiers
 
 Trainer müssen sich austauschen
 
-##### Provide interactive content and different media
+#### Provide interactive content and different media
 
 Videos, Bilder, Übungen, Demos, ...
 
 Secure Coding: geschätzt 2/3 ist diskussion und coding
 
-##### Run pilots (more than one!)
+#### Run pilots (more than one!)
 
 Because of the contradicting feedback
 
-##### Cultural specifics need to be considered
+#### Cultural specifics need to be considered
 
-##### Put business units in charge
+#### Put business units in charge
 
 Trainer mitnehmen, mit entwicklern reden, was sie wollen - nicht von außen aufdrücken!
 
-### Part 2: Retain Knowledge
+## Part 2: Retain Knowledge
 
-#### Weiterführen in einzelnen modulen
+### Weiterführen in einzelnen modulen
 
 * frontend security (HTML 5)
 * databse security
@@ -111,3 +110,67 @@ Gamificatin funktioniert sehr gut
 Nicht jeder mag es, nicht jeder möchte sein profil öffentlich, jeder hat die wahl
 
 Enge Absprache mit den Betriebsräten weltweit umgesetzt
+
+#  XSS von 1999 bis 2013 - Die Doctrine Classique der Websicherheit (Mario Heiderich)
+
+Ecommerce: Pizza hut online shop
+
+Brendan Eich erfindet SOP (Same Origin Policy), LiveScript (JavaScript) und damit auch XSS.
+
+Browserkriege kommen 1999
+HTML4 + DOM -> JS kann DOM manipulieren
+
+Security nightmare, weil Browser Features brauchten.
+
+2001 500 Mio. Internetnutzer
+
+HTML stagniert
+
+AJAX und Web 2.0 (Facebook wird geboren)
+
+Browser bauen eigene Features XML, WML, E4X, VBS, XDR, LiveConnect, Drag & Drop, Clipboard, WBXML, Behaviours, WD-XSL, CSS, Expressions, SSE, SVG, HTML+TIME, SMIL, SAMI, ASX, ActiveX, XDR
+
+2005
+
+1 Mrd Internet benutzer
+
+hoch komplexe Webanwendungen: GMail
+
+HTML 5 entsteht, WHATWG vs. W3C
+
+Erste XSS Würmer (Sammy Wurm)
+
+Wieder Browserkriege -> Feature die nicht rein gehören
+
+2009
+1,6 Mrd User
+
+Über-Browser: Cloud, Mobile, Social Networks, Venture Capital
+
+XSS ist Allgegenwertig!
+
+> Wenn wir eine Million Hühner haben und eine Million Tastaturen und da einfach Körner reinstreuen, exploiten die auf irgendeiner Internetseite XSS.
+
+
+# Lost in Translation: Missverständnisse zwischen Mensch/Mensch und Mensch/Maschine und deren Auswirkungen auf Web-Security (Sebastian Schinzel)
+
+ > Das ist ein Awarness talk
+
+wir brauchen demut vor der technik und die nötige offenheit um sichere anwendungen zu bauen
+
+> Post-Penetrationstest-Phase oft frustrierend
+> - Report fängt Staub
+> - Gegenmaßnahmen nur, wenn Explot gezeigt wurde
+> - Beratungsresistenz bei den Entwicklern
+
+> PHP Quellcode ist missverständlich.
+
+Hintertür im Linux Kernel
+
+Zuweisung auf der rechten Seite
+
+
+
+
+
+> "MEinen Stundenten würde ich abraten, mit PHP coden zu lernen"
