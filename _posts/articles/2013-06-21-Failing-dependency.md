@@ -1,7 +1,7 @@
 ---
 layout: article
 published: 
-  - false
+  - true
   - "false"
 title: Failing dependency
 abstract: "Notice: Trying to get property of non-object in /var/www/app/code/core/Mage/Core/Model/Config.php on line 1239"
